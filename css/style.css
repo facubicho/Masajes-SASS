@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&family=Hind+Madurai:wght@300;400&family=Hind+Siliguri&family=Inter&display=swap");
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#main_about {
+  background-color: white;
+  color: orangered;
+  text-decoration: dashed;
+  padding-top: 90px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  background-color: black;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 9999;
+}
+header img {
+  border: solid 1px orangered;
+  animation: fade-in 4s ease-in-out 0s both;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
+  font-size: 20px;
+  font-weight: bold;
+  animation: fade-in 4s ease-in-out 0s both;
+}
+header ul a {
+  color: orangered;
+  padding: 10px;
+  border: none;
+}
+
+#main_index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding-top: 70px;
+}
+#main_index iframe {
+  animation: fade-in 4s ease-in-out 0s both;
+}
+#main_index div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#main_index h1 {
+  font-size: 1em;
+  padding-top: 10px;
+  font-weight: bold;
+  animation: fade-in 4s ease-in-out 0s both;
+}
+#main_index p {
+  width: 80%;
+  font-weight: bold;
+  animation: fade-in 4s ease-in-out 0s both;
+}
+
+.first_letter {
+  font-size: 5.5em;
+  font-weight: bold;
+}
+
+#main_zona {
+  animation: fade-in 4s ease-in-out 0s both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
+#main_zona .info_zona {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main#main_zona iframe {
+  animation: fade-in 4s ease-in-out 0s both;
+}
+
+#main_datos {
+  padding-top: 70px;
+}
+
+#main_masajes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding-top: 80px;
+}
+
+footer {
+  background-image: url(../img/mandala_footer.png);
+  background-position: left;
+  padding: 10px;
+  border: none;
+  margin: 10px 10px;
+  color: orange;
+  font-size: 20px;
+  border: solid 1px blueviolet;
+  color: black;
+  font-weight: bold;
+  animation: fade-in 4s ease-in-out 0s both;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+footer ul li a {
+  color: orangered;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+iframe {
+  padding: 2px;
+  border: ridge 1px blueviolet;
+  margin: 10px;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+}
+
+#div1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+  margin: 20px;
+  font-size: 12px;
+}
+
+#div2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  font-size: 12px;
+}
+
+.div_mas_grande {
+  animation: fade-in 4s ease-in-out 0s both;
+}
+
+.div_principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.id_masajes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+  font-size: 12px;
+}
+
+.div_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.div_img img {
+  border: solid 1px blueviolet;
+}
+
+.izq {
+  animation: animate__fadeInRight 3s;
+}
+
+.der {
+  animation: animate__fadeInLeft 3s;
+}
+
+.titulo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+}
+
+.no_borde {
+  border: none;
+  animation: animate__rotateIn 1s;
+  border-radius: 50%;
+}
+
+.redes {
+  animation: animate__fadeInRight 2s;
+}
+
+@keyframes animate__rotateIn {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate__fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes animate__fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.separador {
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+  background: rgb(157, 16, 255);
+  background: -moz-radial-gradient(circle, rgb(157, 16, 255) 24%, rgb(255, 191, 0) 81%);
+  background: -webkit-radial-gradient(circle, rgb(157, 16, 255) 24%, rgb(255, 191, 0) 81%);
+  background: radial-gradient(circle, rgb(157, 16, 255) 24%, rgb(255, 191, 0) 81%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9d10ff", endColorstr="#ffbf00", GradientType=1);
+}
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    position: fixed;
+    width: 100%;
+    justify-content: cen;
+    z-index: 9999;
+  }
+  header img {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #main_index iframe {
+    width: auto;
+    height: auto;
+  }
+  #div1,
+  #div2 {
+    flex-direction: column;
+  }
+  #div3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .id_masajes {
+    grid-area: id_masajes;
+  }
+  .div_img {
+    grid-area: div_img;
+    animation: none;
+  }
+  .div_principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "id_masajes" "div_img";
+  }
+  #main_zona {
+    display: flex;
+    flex-direction: column;
+  }
+  #main_zona iframe {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

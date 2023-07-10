@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Hind Siliguri', sans-serif;
+
+}
+
+header {
+  @include flex-center;
+  flex-direction: row-reverse;
+  background-color: $color_black;
+  @include opacity($opacity);
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 9999;
+
+  img {
+    border: solid 1px map-get($color_info, cl1);
+    @include fade-in-animation;
+  }
+
+  ul {
+    @include flex-center;
+    background-color: none;
+    font-size: 20px;
+    font-weight: bold;
+    @include fade-in-animation;
+
+    a {
+      color: map-get($color_info, cl1);
+      padding: 10px;
+      border: none;
+    }
+  }
+}
+
+
+#main_index {
+  @include flex-center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color_white;
+  padding-top: 70px;
+
+  iframe {
+    @include fade-in-animation;
+  }
+
+  div {
+
+    @include flex-center;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 1em;
+    padding-top: 10px;
+    font-weight: bold;
+    @include fade-in-animation;
+  }
+
+  p {
+    width: 80%;
+    font-weight: bold;
+    @include fade-in-animation;
+  }
+}
+
+.first_letter {
+  font-size: 5.5em;
+  font-weight: bold;
+}
+
+#main_about {
+  @extend %disp_color;
+}
+
+#main_zona {
+  @include fade-in-animation;
+  @include flex-center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+
+  .info_zona {
+    font-weight: bold;
+    @include flex-center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+main#main_zona {
+  
+  iframe {
+    @include fade-in-animation;
+  }
+}
+
+#main_datos {
+  padding-top: 70px;
+}
+
+#main_masajes {
+  @include flex-center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: $color_white;
+  padding-top: 80px;
+}
+
+footer {
+  background-image: url(../img/mandala_footer.png);
+  background-position: left;
+  padding: 10px;
+  border: none;
+  margin: 10px 10px;
+  color: $color_orange;
+  font-size: 20px;
+  border: solid 1px $color_blueviolet;
+  color: $color_black;
+  font-weight: bold;
+  @include fade-in-animation;
+
+  ul {
+    @include flex-center;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+
+    li a {
+      color: map-get($color_info, cl1);
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}
+
+iframe {
+  padding: 2px;
+  border: ridge 1px $color_blueviolet;
+  margin: 10px;
+}
+
+p {
+  @include flex-center;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+}
+
+#div1 {
+  @include flex-center;
+  flex-direction: row;
+  padding: 10px;
+  margin: 20px;
+  font-size: 12px;
+}
+
+#div2 {
+  @include flex-center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  font-size: 12px;
+}
+
+.div_mas_grande {
+  @include fade-in-animation;
+}
+
+.div_principal {
+  @include flex-center;
+  flex-direction: row;
+}
+
+.id_masajes {
+  @include flex-center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+  font-size: 12px;
+}
+
+.div_img {
+  @include flex-center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+
+  img {
+    border: solid 1px $color_blueviolet;
+  }
+}
+
+.izq {
+  animation: animate__fadeInRight 3s;
+}
+
+.der {
+  animation: animate__fadeInLeft 3s;
+}
+
+.titulo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+}
+
+.no_borde {
+  border: none;
+  animation: animate__rotateIn 1s;
+  border-radius: 50%;
+}
+
+.redes {
+  animation: animate__fadeInRight 2s;
+}
+
+@keyframes animate__rotateIn {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate__fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes animate__fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.separador {
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+  background: rgb(157, 16, 255);
+  background: -moz-radial-gradient(circle, rgba(157, 16, 255, 1) 24%, rgba(255, 191, 0, 1) 81%);
+  background: -webkit-radial-gradient(circle, rgba(157, 16, 255, 1) 24%, rgba(255, 191, 0, 1) 81%);
+  background: radial-gradient(circle, rgba(157, 16, 255, 1) 24%, rgba(255, 191, 0, 1) 81%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9d10ff", endColorstr="#ffbf00", GradientType=1);
+
+}
+
+@media (max-width: 768px) {
+  header {
+    @include flex-center;
+
+    background-color: $color_black;
+    @include opacity($opacity);
+    position: fixed;
+    width: 100%;
+    justify-content: cen;
+    z-index: 9999;
+
+    img {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #main_index iframe {
+    width: auto;
+    height: auto;
+  }
+
+  #div1,
+  #div2 {
+    flex-direction: column;
+  }
+
+  #div3 {
+    @include flex-center;
+    justify-content: center;
+  }
+
+  .id_masajes {
+    grid-area: id_masajes;
+  }
+
+  .div_img {
+    grid-area: div_img;
+    animation: none;
+  }
+
+  .div_principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "id_masajes"
+      "div_img";
+  }
+
+  #main_zona {
+    display: flex;
+    flex-direction: column;
+
+    iframe {
+      width: 90%;
+      height: auto;
+    }
+  }
+
+
+
+}

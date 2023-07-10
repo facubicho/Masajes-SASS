@@ -1,0 +1,6 @@
+%disp_color {
+  background-color: $color_white;
+  color: map-get($color_info,cl1);
+  text-decoration: map-get($color_info,cld);
+  padding-top: 90px;
+}

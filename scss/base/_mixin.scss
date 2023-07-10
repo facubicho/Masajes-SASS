@@ -1,0 +1,25 @@
+@mixin opacity($opacity) {
+    $opacity-value: $opacity * 100;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity-value})";
+    filter: alpha(opacity=#{$opacity-value});
+    -moz-opacity: #{$opacity};
+    -khtml-opacity: #{$opacity};
+    opacity: #{$opacity};
+}
+
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin fade-in-animation {
+  animation: map-get($animation_info, animation-name)
+             map-get($animation_info, animation-duration)
+             map-get($animation_info, animation-timing-function)
+             map-get($animation_info, animation-delay)
+             map-get($animation_info, animation-fill-mode);
+}
+
