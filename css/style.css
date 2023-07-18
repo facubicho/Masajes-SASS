@@ -131,13 +131,25 @@ main#main_zona iframe {
   background-color: white;
   padding-top: 80px;
 }
+#main_masajes p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+}
 
 footer {
-  background-image: url(../img/mandala_footer.png);
+  background-color: black;
   background-position: left;
-  padding: 10px;
-  border: none;
-  margin: 10px 10px;
+  height: 250px;
+  border: black;
+  margin: 20px 0px;
   color: orange;
   font-size: 20px;
   border: solid 1px blueviolet;
@@ -163,15 +175,6 @@ iframe {
   padding: 2px;
   border: ridge 1px blueviolet;
   margin: 10px;
-}
-
-p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  text-align: center;
-  justify-content: space-around;
 }
 
 #div1 {
@@ -244,13 +247,6 @@ p {
   font-weight: bold;
 }
 
-p {
-  align-items: center;
-  padding: 5px;
-  margin: 5px;
-  font-size: 12px;
-}
-
 .no_borde {
   border: none;
   animation: animate__rotateIn 1s;
@@ -305,6 +301,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row-reverse;
     background-color: black;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
     filter: alpha(opacity=80);
@@ -313,14 +310,27 @@ p {
     opacity: 0.8;
     position: fixed;
     width: 100%;
-    justify-content: cen;
     z-index: 9999;
   }
   header img {
     display: none;
   }
-}
-@media (max-width: 768px) {
+  header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    font-size: 10px;
+    font-weight: bold;
+    animation: fade-in 4s ease-in-out 0s both;
+  }
+  header ul a {
+    color: orangered;
+    padding: 5px;
+    border: none;
+  }
   #main_index iframe {
     width: auto;
     height: auto;

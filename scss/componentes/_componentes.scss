@@ -98,7 +98,7 @@ header {
 }
 
 main#main_zona {
-  
+
   iframe {
     @include fade-in-animation;
   }
@@ -115,14 +115,28 @@ main#main_zona {
   align-items: center;
   background-color: $color_white;
   padding-top: 80px;
+
+  p {
+    @include flex-center;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    font-size: 12px;
+  }
+  
 }
 
 footer {
-  background-image: url(../img/mandala_footer.png);
+  // background-image: url(../img/mandala_footer.png);
+  background-color: black;
   background-position: left;
-  padding: 10px;
-  border: none;
-  margin: 10px 10px;
+  height: 250px;
+  // padding: 10px;
+  border: black;
+  margin: 20px 0px;
   color: $color_orange;
   font-size: 20px;
   border: solid 1px $color_blueviolet;
@@ -150,12 +164,6 @@ iframe {
   margin: 10px;
 }
 
-p {
-  @include flex-center;
-  flex-direction: row;
-  text-align: center;
-  justify-content: space-around;
-}
 
 #div1 {
   @include flex-center;
@@ -219,12 +227,6 @@ p {
   font-weight: bold;
 }
 
-p {
-  align-items: center;
-  padding: 5px;
-  margin: 5px;
-  font-size: 12px;
-}
 
 .no_borde {
   border: none;
@@ -283,23 +285,38 @@ p {
 }
 
 @media (max-width: 768px) {
+
   header {
     @include flex-center;
-
+    flex-direction: row-reverse;
     background-color: $color_black;
     @include opacity($opacity);
     position: fixed;
     width: 100%;
-    justify-content: cen;
     z-index: 9999;
 
     img {
       display: none;
     }
-  }
-}
 
-@media (max-width: 768px) {
+    ul {
+      @include flex-center;
+      justify-content: center;
+
+      align-items: center;
+      background-color: none;
+      font-size: 10px;
+      font-weight: bold;
+      @include fade-in-animation;
+
+      a {
+        color: map-get($color_info, cl1);
+        padding: 5px;
+        border: none;
+      }
+    }
+  }
+
   #main_index iframe {
     width: auto;
     height: auto;
