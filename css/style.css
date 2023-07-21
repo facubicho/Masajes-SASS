@@ -89,8 +89,12 @@ header ul a {
 }
 
 .first_letter {
-  font-size: 5.5em;
+  font-size: 1.5em;
   font-weight: bold;
+}
+
+#main_about {
+  padding-top: 120px;
 }
 
 #main_zona {
@@ -296,12 +300,51 @@ iframe {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9d10ff", endColorstr="#ffbf00", GradientType=1);
 }
 
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
+}
+footer .div_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+footer .div_footer .div_ul_footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+footer .div_footer .div_ul_footer li {
+  text-align: center;
+}
+footer .div_footer .div_ul_footer li a {
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.p_footer {
+  color: #ffffff;
+  font-size: 1rem;
+  grid-column: 1/-1;
+  text-align: center;
+  font-weight: normal;
+}
+
 @media (max-width: 768px) {
   header {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row-reverse;
     background-color: black;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
     filter: alpha(opacity=80);
@@ -310,6 +353,7 @@ iframe {
     opacity: 0.8;
     position: fixed;
     width: 100%;
+    justify-content: cen;
     z-index: 9999;
   }
   header img {
@@ -319,17 +363,20 @@ iframe {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: center;
-    align-items: center;
     background-color: none;
     font-size: 10px;
     font-weight: bold;
+    animation: none;
     animation: fade-in 4s ease-in-out 0s both;
+    flex: 1;
   }
   header ul a {
     color: orangered;
     padding: 5px;
     border: none;
+  }
+  #main_about {
+    padding-top: 60px;
   }
   #main_index iframe {
     width: auto;
@@ -358,6 +405,12 @@ iframe {
     grid-template-rows: auto;
     grid-template-areas: "id_masajes" "div_img";
   }
+  .der {
+    animation: none;
+  }
+  .izq {
+    animation: none;
+  }
   #main_zona {
     display: flex;
     flex-direction: column;
@@ -365,6 +418,11 @@ iframe {
   #main_zona iframe {
     width: 90%;
     height: auto;
+  }
+}
+@media (max-width: 400px) {
+  #main_about p {
+    font-size: 10px;
   }
 }
 
