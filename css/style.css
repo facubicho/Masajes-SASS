@@ -50,6 +50,7 @@ header ul {
   font-size: 20px;
   font-weight: bold;
   animation: fade-in 4s ease-in-out 0s both;
+  padding-top: 10px;
 }
 header ul a {
   color: orangered;
@@ -77,14 +78,15 @@ header ul a {
   flex-direction: column;
 }
 #main_index h1 {
-  font-size: 1em;
+  font-size: 25px;
   padding-top: 10px;
   font-weight: bold;
   animation: fade-in 4s ease-in-out 0s both;
 }
 #main_index p {
   width: 80%;
-  font-weight: bold;
+  font-weight: none;
+  font-size: 20px;
   animation: fade-in 4s ease-in-out 0s both;
 }
 
@@ -94,7 +96,11 @@ header ul a {
 }
 
 #main_about {
-  padding-top: 120px;
+  padding-top: 130px;
+  font-weight: bold;
+}
+#main_about #carouselExampleSlidesOnly {
+  padding: 40px;
 }
 
 #main_zona {
@@ -115,10 +121,14 @@ header ul a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 30px 20px;
 }
 
 main#main_zona iframe {
   animation: fade-in 4s ease-in-out 0s both;
+}
+main#main_zona p {
+  font-size: 20px;
 }
 
 #main_datos {
@@ -145,7 +155,7 @@ main#main_zona iframe {
   align-items: center;
   padding: 5px;
   margin: 5px;
-  font-size: 12px;
+  font-size: 20px;
 }
 
 footer {
@@ -200,7 +210,7 @@ iframe {
   align-items: center;
   padding: 10px;
   margin: 10px;
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .div_mas_grande {
@@ -247,7 +257,7 @@ iframe {
 }
 
 .titulo {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -261,34 +271,6 @@ iframe {
   animation: animate__fadeInRight 2s;
 }
 
-@keyframes animate__rotateIn {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes animate__fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes animate__fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 .separador {
   align-items: center;
   padding: 5px;
@@ -340,6 +322,34 @@ footer .div_footer .div_ul_footer li a {
   font-weight: normal;
 }
 
+@keyframes animate__rotateIn {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate__fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes animate__fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 @media (max-width: 768px) {
   header {
     display: flex;
@@ -369,6 +379,7 @@ footer .div_footer .div_ul_footer li a {
     animation: none;
     animation: fade-in 4s ease-in-out 0s both;
     flex: 1;
+    padding-top: 15px;
   }
   header ul a {
     color: orangered;
@@ -377,6 +388,15 @@ footer .div_footer .div_ul_footer li a {
   }
   #main_about {
     padding-top: 60px;
+  }
+  #main_about .col.text-center {
+    padding-bottom: 30px;
+  }
+  #main_about .col.text-center p {
+    font-size: 25px;
+  }
+  #main_about #carouselExampleSlidesOnly {
+    padding-top: 40px;
   }
   #main_index iframe {
     width: auto;
@@ -422,7 +442,7 @@ footer .div_footer .div_ul_footer li a {
 }
 @media (max-width: 400px) {
   #main_about p {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
